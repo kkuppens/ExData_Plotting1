@@ -1,8 +1,7 @@
 #Step 1. Load all data from file into R
 data <- read.csv('./data/household_power_consumption.txt', sep=";", na.strings="?")
 #Step 2. Filter data set by the requested dates using a logical vector
-data$Date <- as.Date(data$Date,"%d/%m/%Y")
-data <- data[(data$Date == "2007-02-01") | (data$Date == "2007-02-02"), ]
+data <- data[(data$Date == "1/2/2007") | (data$Date == "2/2/2007"), ]
 #Step 3. Create histogram and display to sceen device.
 #Set title, add description for x-axis, set color to red color.
 hist(data$Global_active_power, col = "red", main = "Global Active Power",
