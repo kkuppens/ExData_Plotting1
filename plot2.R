@@ -13,6 +13,3 @@ png(file = "plot2.png", height=480, width=480)
 #Add description for y-axis, remove description for x-axis, use type lines.
 plot(data$datetime, data$Global_active_power, type="l", xlab ="", ylab="Global Active Power (kilowatts)")
 dev.off() #close device
-
-
-
