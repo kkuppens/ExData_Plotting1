@@ -4,7 +4,7 @@ data <- read.csv('./data/household_power_consumption.txt', sep=";", na.strings="
 #Step 2. Filter data set by the requested dates using subset and logical condition
 # Create datetime variable and add to data frame.
 data$datetime <- strptime(paste(data$Date, data$Time, sep = " "), "%d/%m/%Y %H:%M:%S")
-# Select data for first and second of February 2007 a
+# Select data for first and second of February 2007 
 data <- subset(data, as.Date(datetime) >= as.Date("2007-02-01") &
                  as.Date(datetime) <= as.Date("2007-02-02"))
 #Create png graphic device with resolution 480x480 
