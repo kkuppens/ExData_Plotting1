@@ -9,7 +9,7 @@ data <- subset(data, as.Date(datetime) >= as.Date("2007-02-01") &
                  as.Date(datetime) <= as.Date("2007-02-02"))
 #Create png graphic device with resolution 480x480 
 png(file = "plot1.png", height=480, width=480)
-#Step 3. Create histogram and display to screen device.
+#Step 3. Create histogram and display to screen device (png file).
 # Set title, add description for x-axis, set color to red color.
 hist(data$Global_active_power, col = "red", main = "Global Active Power",
      xlab = "Global Active Power (kilowatts)")
