@@ -8,6 +8,6 @@ data <- data[(data$Date == "2007-02-01") | (data$Date == "2007-02-02"), ]
 hist(data$Global_active_power, col = "red", main = "Global Active Power",
      xlab = "Global Active Power (kilowatts)")
 #Step 4. Make copy of screen device output to file of type png, named plot1.png
-#File we be created in default users primary work directory, see getwd().
+#File will be stored in users default primary work directory, see getwd().
 dev.copy(png, file = "plot1.png")
 dev.off()
